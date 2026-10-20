@@ -24,17 +24,8 @@ source medicalchatboatenv/bin/activate
 pip install -r requirements.txt
 ```
 
-
-### Create a `.env` file in the root directory and add your Pinecone & openai credentials as follows:
-
-```ini
-PINECONE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-OPENAI_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-```
-
-
 ```bash
-# run the following command to store embeddings to pinecone
+# run the following command to store embeddings
 python store_index.py
 ```
 
@@ -54,8 +45,8 @@ open up localhost:
 - Python
 - LangChain
 - Flask
-- GPT
-- Pinecone
+- Ollama
+- FAISS
 
 
 # AWS-CICD-Deployment-with-Github-Actions
@@ -125,7 +116,5 @@ open up localhost:
    - AWS_SECRET_ACCESS_KEY
    - AWS_DEFAULT_REGION
    - ECR_REPO
-   - PINECONE_API_KEY
-   - OPENAI_API_KEY
 
     
